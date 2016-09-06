@@ -17,7 +17,7 @@ angular.module('starter.controllers', [])
 
     $scope.figure = function (x) {
         tab.push(x);
-        $scope.result = tab.join('') *1;
+        $scope.result = tab.join('');
     }
 
     $scope.getResult = function () {

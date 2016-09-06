@@ -25,3 +25,12 @@
 #zero {
     margin-bottom: 5px;
 }
+
+#aboutme {
+    font-weight: lighter !important;
+    line-height: 2;
+    font-size: 15px;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
