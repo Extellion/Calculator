@@ -6,13 +6,15 @@ angular.module('starter.controllers', [])
     var tab = [];
     var tmp = 0;
 
-    $scope.operateurs = function (x) {
+    $scope.operators = function (x) {
+        $scope.getResult();
         tmp = $scope.result;
         tab = [];
+        $scope.result = 0;
         operateur = x;
     }
 
-    $scope.chiffre = function (x) {
+    $scope.numbers = function (x) {
         tab.push(x);
         $scope.result = tab.join('') *1;
     }
@@ -24,7 +26,7 @@ angular.module('starter.controllers', [])
             $scope.result = tmp - $scope.result;
         } else if (operateur === 3) {
             $scope.result *= tmp;
-        } else if (opertaeur === 4) {
+        } else if (operateur === 4) {
             $scope.result *= tmp / $scope.result;
         }
     }
