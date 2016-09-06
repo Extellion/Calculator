@@ -1,1 +1,15 @@
 /* Empty. Add your own CSS if you like */
+.columnOfThree {
+    width: 41%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#result p {
+    text-align: center;
+}
+
+#operators {
+    width: 80%;
+}

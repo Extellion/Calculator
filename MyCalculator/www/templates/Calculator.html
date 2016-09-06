@@ -1,0 +1,35 @@
+<ion-view view-title="Calculator">
+  <ion-header-bar class="bar bar-header bar-balanced">
+    <h1 class="title">IONIC CALCULATOR</h1>
+</ion-header-bar>
+<ion-content>
+    <div id="result"><p>{{result}}</p></div>
+    <div class="columnOfThree">
+      <button class="button button-positive" ng-click="chiffre(1);">1</button>
+      <button class="button button-positive" ng-click="chiffre(2);">2</button>
+      <button class="button button-positive" ng-click="chiffre(3);">3</button>
+  </div>
+  <div class="columnOfThree">
+      <button class="button button-positive" ng-click="chiffre(4);">4</button>
+      <button class="button button-positive" ng-click="chiffre(5);">5</button>
+      <button class="button button-positive" ng-click="chiffre(6);">6</button>
+  </div>
+  <div class="columnOfThree">
+      <button class="button button-positive" ng-click="chiffre(7);">7</button>
+      <button class="button button-positive" ng-click="chiffre(8);">8</button>
+      <button class="button button-positive" ng-click="chiffre(9);">9</button>
+  </div>
+  <aside id="operators">
+      <button class="button button-balanced" ng-click="operateurs(1);">+</button>
+      <button class="button button-balanced" ng-click="operateurs(2);">-</button>
+      <button class="button button-positive" ng-click="chiffre(0);">0</button>
+      <button class="button button-balanced" ng-click="operateurs(3);">X</button>
+      <button class="button button-balanced" ng-click="operateurs(4);">%</button>
+  </aside>
+  <div class="Rest">
+      <button class="button button-positive" ng-click="chiffre('.');">.</button>
+      <button class="button button-light" ng-click="destruct();">C</button>
+      <button class="button button-energized" ng-click="getResult();">=</button>
+  </div>
+</ion-content>
+</ion-view>
