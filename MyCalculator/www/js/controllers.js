@@ -5,28 +5,29 @@ angular.module('starter.controllers', [])
     var operateur;
     var tab = [];
     var tmp = 0;
-
+    var chart = [];
+    var tmp2;
     $scope.operators = function (x) {
         $scope.getResult();
         tmp = $scope.result;
         tab = [];
-        $scope.result = 0;
         operateur = x;
+        $scope.result = operateur;
     }
 
-    $scope.numbers = function (x) {
+    $scope.figure = function (x) {
         tab.push(x);
         $scope.result = tab.join('') *1;
     }
 
     $scope.getResult = function () {
-        if (operateur === 1) {
+        if (operateur === '+') {
             $scope.result += tmp;
-        } else if (operateur === 2) {
+        } else if (operateur === '-') {
             $scope.result = tmp - $scope.result;
-        } else if (operateur === 3) {
+        } else if (operateur === '*') {
             $scope.result *= tmp;
-        } else if (operateur === 4) {
+        } else if (operateur === '%') {
             $scope.result *= tmp / $scope.result;
         }
     }
@@ -36,4 +37,4 @@ angular.module('starter.controllers', [])
         tab = [];
         $scope.result = 0;
     }
-})
+});

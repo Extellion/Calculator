@@ -8,6 +8,8 @@
 
 #result p {
     text-align: center;
+    font-size: 2em;
+    margin-top: 5px;
 }
 
 #operators {
