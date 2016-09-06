@@ -58,6 +58,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
+    .state('tabs.amchart', {
+        url: '/chart',
+        views: {
+            'chart-tab': {
+                templateUrl: "templates/chart.html",
+                controller: "AmChartsController"
+            }
+        }
+    })
+
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tabs/calc');
 });
