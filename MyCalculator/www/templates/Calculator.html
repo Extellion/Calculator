@@ -1,41 +1,33 @@
 <ion-view view-title="Calculator">
-  <ion-header-bar class="bar bar-header bar-balanced">
-    <h1 class="title">IONIC CALCULATOR</h1>
-</ion-header-bar>
 <ion-content>
     <div id="result"><p>{{result}}</p></div>
+    <div id="operators">
+        <button class="button button-balanced" ng-click="operators('+');">+</button>
+        <button class="button button-balanced" ng-click="operators('-');">-</button>
+        <button class="button button-balanced" ng-click="operators('*');">X</button>
+        <button class="button button-balanced" ng-click="operators('%');">%</button>
+    </div>
     <div class="columnOfThree">
-    <button class="button button-balanced" ng-click="operators('+');">+</button>
-      <button class="button button-positive" ng-click="figure(1);">1</button>
-      <button class="button button-positive" ng-click="figure(2);">2</button>
-      <button class="button button-positive" ng-click="figure(3);">3</button>
-      <button class="button button-balanced" ng-click="operators('-');">-</button>
-  </div>
-  <div class="columnOfThree">
-      <button class="button button-balanced" ng-click="operators('*');">X</button>
-      <button class="button button-positive" ng-click="figure(4);">4</button>
-      <button class="button button-positive" ng-click="figure(5);">5</button>
-      <button class="button button-positive" ng-click="figure(6);">6</button>
-      <button class="button button-balanced" ng-click="operators('%');">%</button>
-  </div>
-  <div class="columnOfThree">
-      <button class="button button-balanced" ng-click="figure('.');">.</button>
-      <button class="button button-positive" ng-click="figure(7);">7</button>
-      <button class="button button-positive" ng-click="figure(8);">8</button>
-      <button class="button button-positive" ng-click="figure(9);">9</button>
-      <button class="button button-energized" ng-click="getResult();">=</button>
-  </div>
-  <div id="centerMiddle">
-      <div id="zero">
-          <button class="button button-positive" ng-click="figure(0);">0</button>
-      </div>
-      <div id="equal">
-          <button class="button button-calm" ng-click="destruct();">C</button>
-      </div>
-  </div>
-  <aside id="operators">
-  </aside>
-  <div class="Rest">
-  </div>
+        <button class="button button-positive" style="margin-bottom: 5px; margin-top: 5px" ng-click="figure(1);">1</button>
+        <button class="button button-positive" style="margin-bottom: 5px; margin-top: 5px" ng-click="figure(2);">2</button>
+        <button class="button button-positive" style="margin-bottom: 5px; margin-top: 5px" ng-click="figure(3);">3</button>
+        <button class="button button-balanced" style="margin-bottom: 5px; margin-top: 5px;" ng-click="destruct();">C</button>
+    </div>
+    <div class="columnMiddle">
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(4);">4</button>
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(5);">5</button>
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(6);">6</button>
+        <button class="button button-balanced" style="margin-bottom: 5px;" ng-click="figure('.');">.</button>
+    </div>
+    <div id="columnLast">
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(7);">7</button>
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(8);">8</button>
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(9);">9</button>
+        <button class="button button-positive" style="margin-bottom: 5px;" ng-click="figure(0);">0</button>
+    </div>
+    <div id="equalZero">
+        <button class="button button-energized" style="width: 100%" ng-click="getResult();">=</button>
+    </div>
+    </div>
 </ion-content>
 </ion-view>

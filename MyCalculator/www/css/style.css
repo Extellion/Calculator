@@ -1,6 +1,6 @@
 /* Empty. Add your own CSS if you like */
 .columnOfThree {
-    width: 70%;
+    width: 61%;
     margin: 0 auto;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -13,7 +13,7 @@
 }
 
 #operators {
-    width: 274px;
+    width: 61%;
     margin: 0 auto;
 }
 
@@ -33,4 +33,23 @@
     width: 90%;
     text-align: justify;
     margin: 0 auto;
+}
+
+.columnMiddle {
+    width: 61%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#columnLast {
+    width: 61%;
+    margin: 0 auto;
+}
+
+#equalZero {
+    width: 61%;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
